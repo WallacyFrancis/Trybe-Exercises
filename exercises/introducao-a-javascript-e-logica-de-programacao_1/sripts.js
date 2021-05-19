@@ -1,4 +1,4 @@
-console.log(" ++ OPERADORES ARITIMÉTICOS ++ ");
+/* console.log(" ++ OPERADORES ARITIMÉTICOS ++ ");
 
 let a = 10;
 let b = 5;
@@ -12,10 +12,10 @@ let div = a / b;
 console.log("Soma: " + soma);
 console.log("Subtração: " + sub);
 console.log("Multiplicação: " + mult);
-console.log("Divisão: "+ div);
+console.log("Divisão: "+ div); */
 
 //---------------------
-console.log(" ++ COMPARADOR DE NÚMEROS ++ ")
+/* console.log(" ++ COMPARADOR DE NÚMEROS ++ ")
 
 let num1 = 20;
 let num2 = 40;
@@ -27,9 +27,9 @@ if (num1 > num2) {
 } else {
     console.log("O numero " + num2 + " é maior que " + num1);
 }
-
+ */
 //-----------------------
-console.log(" ++ O MAIOR DE 3 NÚMEROS ++ ");
+/* console.log(" ++ O MAIOR DE 3 NÚMEROS ++ ");
 
 let n1 = 2;
 let n2 = 3;
@@ -43,10 +43,10 @@ if (n1 > n2 && n3) {
     console.log("O maior numero é " + n3);
 } else {
     console.log("Possui números iguais");
-}
+} */
 
 // -----------------------
-console.log(" ++ É TRINAGULO ++ ");
+/* console.log(" ++ É TRINAGULO ++ ");
 
 let a1 = 60.0;
 let a2 = 60.0;
@@ -63,11 +63,11 @@ if (triangulo == 180.0) {
 //----------------------------
 console.log(" ++ PEÇAS DE XADREZ ++ ")
 
-let peca = null;
+let peca = null; */
 
 // peca = prompt("Digite o nome de uma peça de xadrez: ");
 
-switch (peca.toLowerCase()) {
+/* switch (peca.toLowerCase()) {
     case "bispo":
         console.log("Diagonal");
         break;
@@ -86,4 +86,29 @@ switch (peca.toLowerCase()) {
     case "dama":
         console.log("Move free");
         break;
+}
+ */
+//----------------------------------------
+console.log(" ++ RESULTADO NOTA EM PERCENTUAL ++");
+
+let nota = prompt("Insira uma nota entre 0 e 100: ");
+
+do {
+  nota = prompt("Valor digitado incorreto, digite novamente: ");
+} while (nota > 100 && nota < 0);
+  
+
+
+if(nota >= 90) {
+  console.log("Sua nota foi A!");
+} else if(nota >= 80) {
+  console.log("Sua nota foi B!");
+} else if(nota >= 70) {
+  console.log("Sua nota foi C!");
+} else if(nota >= 60) {
+  console.log("Sua nota foi D!");
+} else if(nota >= 50) {
+  console.log("Sua nota foi E!");
+} else {
+  console.log("Sua nota foi F");
 }
