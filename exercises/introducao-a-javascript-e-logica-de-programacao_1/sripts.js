@@ -181,6 +181,39 @@ if (salario <= 1556.94) {
   result = salario - aliquota;
 }
 
+let descontoInss = salario - result;
+let salarioBase = salario - descontoInss;
+//console.log(salarioBase);
+
+
+if (salarioBase <= 1903.98) {
+  ir = "Não será descontado"
+} else if (salarioBase > 1903.98 && salarioBase <= 2826.65) {
+  ir = salarioBase * (7.5 / 100);
+  ir = ir - 142.8;
+  salarioBase = salarioBase - ir;
+  console.log(salarioBase);
+} else if (salarioBase > 2826.65 && salarioBase <= 3751.05) {
+  ir = salarioBase * (15 / 100);
+  ir = ir - 354.80 ;
+  salarioBase = salarioBase - ir;
+  console.log(salarioBase);
+} else if (salarioBase > 3751.05 && salarioBase <= 4664.68) {
+  ir = salarioBase * (22.5 / 100);
+  ir = ir - 636.13 ;
+  salarioBase = salarioBase - ir;
+  console.log(salarioBase);
+} else {
+  ir = salarioBase * (27.5 / 100);
+  ir = ir - 869.36 ;
+  salarioBase = salarioBase - ir;
+  console.log(salarioBase);
+}
+
+
+
+
+
 
 
 
