@@ -89,7 +89,8 @@ let peca = null; */
 }
  */
 //----------------------------------------
-console.log(" ++ RESULTADO NOTA EM PERCENTUAL ++");
+
+/* console.log(" ++ RESULTADO NOTA EM PERCENTUAL ++");
 
 let nota = prompt("Insira uma nota entre 0 e 100: ");
 
@@ -112,3 +113,74 @@ if(nota >= 90) {
 } else {
   console.log("Sua nota foi F");
 }
+ */
+
+//-------------------------------
+/* console.log(" ++ PAR OU ÍMPAR ++");
+
+let num1 = 10;
+let num2 = 15;
+let num3 = 17;
+
+if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+  console.log("TRUE");
+} */
+
+//-----------------------------------------
+
+/* console.log(" ++ PAR OU ÍMPAR -- 2 ++");
+
+let num1 = 10;
+let num2 = 15;
+let num3 = 17;
+
+if (num1 % 2 == 1 || num2 % 2 == 1 || num3 % 2 == 1) {
+  console.log("TRUE");
+} else { 
+  console.log("FALSE");
+} */
+
+//-----------------------------------
+/* console.log(" ++ CALCULO DE VENDA DE PRODUTO ++");
+
+let priceProduct;
+let priceSell;
+
+do {
+  priceProduct = prompt("Informe o valor do Produto");
+  priceSell = prompt("Informe o preço de venda");
+
+  if (priceProduct <= 0 || priceSell <= 0) {
+    console.log("Valores digitados incorretos, precisa ser maior que 0")
+  }
+
+} while ( priceProduct <= 0 || priceSell <= 0)
+
+let priceTribute =  priceSell / (100 / 20);
+let valorLucro = priceSell - priceProduct - priceTribute;
+console.log(valorLucro); */
+
+//------------------------------------------------------
+console.log(" ++  BASE PARA SALÁRIO ++");
+
+let salario = prompt("Informe o valor do salário: ");
+let aliquota;
+let result;
+
+if (salario <= 1556.94) {
+  aliquota = 8 / 100;
+  result = salario - ( salario * aliquota);
+} else if (salario > 1556.94 && salario <= 2594.92) {
+  aliquota = 9 / 100;
+  result = salario - ( salario * aliquota);
+} else if (salario > 2594.92 && salario <= 5189.82) {
+  aliquota = 11 / 100;
+  result = salario - ( salario * aliquota);
+} else {
+  aliquota = 570.88;
+  result = salario - aliquota;
+}
+
+
+
+
